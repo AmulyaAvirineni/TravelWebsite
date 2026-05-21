@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore 3</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f8f9fa;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar{
+    z-index: 1000;
+}
+
+/* HERO IMAGE */
+.hero-img{
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    display: block;
+    margin-top: 56px;
+}
+
+/* SECTION */
+.images1{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 0 150px;
+}
+
+/* CARD */
+.white-box{
+    background: #fff;
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    align-items: center;
+}
+
+/* IMAGE */
+.white-box img{
+    width: 375px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.white-box p{
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+@media (max-width: 992px){
+    .images1{
+        padding: 0 40px;
+    }
+
+    .white-box{
+        width: 100%;
+    }
+
+    .white-box img{
+        width: 300px;
+        height: 220px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+    .images1{
+        padding: 0 20px;
+        margin: 25px 0;
+    }
+
+    .white-box{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .white-box img{
+        width: 100%;
+        height: auto;
+    }
+
+    .white-box p{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .hero-img{
+        max-height: 300px;
+    }
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="myNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about us.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="explore places.html" class="nav-link">Explore Places</a></li>
+            <li class="nav-item"><a href="packages.html" class="nav-link">Packages</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO IMAGE -->
+<img src="rajasthan1.jpeg" alt="Rajasthan" class="hero-img">
+
+<!-- JAIPUR -->
+<div class="images1">
+    <div class="white-box">
+        <img src="jaipur.jpeg" alt="Jaipur">
+        <p><strong>Jaipur</strong> is famous for its royal palaces, historic forts, and vibrant markets. 
+Major attractions include Amber Fort, City Palace, Hawa Mahal, and Jantar Mantar.
+Jaipur beautifully blends royal heritage with modern culture, making it a top tourist destination.</p>
+    </div>
+</div>
+
+<!-- JODHPUR -->
+<div class="images1">
+    <div class="white-box">
+        <img src="jodhpur.jpeg" alt="Jodhpur">
+        <p><strong>Jodhpur</strong> is famously known as the Blue City because of its blue-painted houses near Mehrangarh Fort. 
+It reflects the rich culture and traditions of Rajasthan. 
+The city’s main attractions are Mehrangarh Fort, Jaswant Thada, Umaid Bhawan Palace, and local bazaars. 
+Jodhpur offers a true royal desert experience.</p>
+    </div>
+</div>
+
+<!-- UDAIPUR -->
+<div class="images1">
+    <div class="white-box">
+        <img src="udaipur.jpeg" alt="Udaipur">
+        <p><strong>Udaipur</strong> is called the City of Lakes,Surrounded by the Aravalli Hills, 
+it is known for its peaceful lakes, palaces, and scenic beauty. 
+Popular places include Lake Pichola, City Palace, Jag Mandir, and Fateh Sagar Lake.</p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

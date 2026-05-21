@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Packages</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<style>
+
+body{
+padding-top:80px;
+background:#F0E9E9;
+}
+
+/* text */
+h3,p{
+font-weight:bold;
+font-size:15px;
+}
+
+/* layout */
+.package{
+display:flex;
+gap:50px;
+margin-bottom:60px;
+}
+
+/* images*/
+.images{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+/* images default */
+.images img{
+width:160px;
+height:300px;
+object-fit:cover;
+border-radius:20px;
+cursor:pointer;
+transition:.3s;
+}
+
+/* active image */
+.images img.active{
+width:200px;
+height:360px;
+box-shadow:0 12px 25px rgba(0,0,0,0.35);
+z-index:2;
+}
+
+/* hover */
+.images img:hover{
+transform:scale(1.08);
+box-shadow:0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.package{
+flex-direction:column;
+gap:20px;
+}
+
+.images{
+flex-direction:column;
+align-items:center;
+}
+
+.images img{
+width:80%;
+height:auto;
+}
+
+.images img.active{
+width:85%;
+height:auto;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div id="myNav" class="collapse navbar-collapse">
+<ul class="navbar-nav">
+
+<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="about us.html" class="nav-link">AboutUs</a></li>
+<li class="nav-item"><a href="explore places.html" class="nav-link">Explore Places</a></li>
+<li class="nav-item"><a href="packages.html" class="nav-link">Packages</a></li>
+<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
+</ul>
+</div>
+</nav>
+
+<div class="container mt-4">
+
+<!-- KERALA -->
+<div class="package">
+<div>
+<h3>🌴 KERALA PACKAGE TOUR</h3>
+<p>Fare:</p>
+<ul>
+<li>Adult: ₹13,999/-</li>
+<li>Child: ₹10,499/-</li>
+<li>Single Occupancy: ₹16,500/-</li>
+</ul>
+<p>Places Covered:</p>
+<ul>
+<li>Munnar – Tea gardens</li>
+<li>Alleppey – Backwaters</li>
+<li>Kochi – City attractions</li>
+<li>Trivandrum – Temple</li>
+</ul>
+<p>Package Includes:</p>
+<ul>
+<li>A/C Volvo Coach</li>
+<li>2 Nights Stay</li>
+<li>Meals</li>
+<li>Sightseeing</li>
+<li>Tour Manager</li>
+</ul>
+</div>
+
+<div class="images">
+<img src="munnar1.jpeg">
+<img src="allepey1.jpeg" class="active">
+<img src="padmanabaswamytemple1.jpeg">
+</div>
+</div>
+
+<!-- HIMACHAL  -->
+<div class="package">
+<div>
+<h3>🏔️ HIMACHAL PRADESH PACKAGE TOUR</h3>
+<p>Fare:</p>
+<ul>
+<li>Adult: ₹11,999/-</li>
+<li>Child: ₹9,599/-</li>
+<li>Single: ₹14,900/-</li>
+</ul>
+<p>Places Covered:</p>
+<ul>
+<li>Shimla</li>
+<li>Manali</li>
+<li>Dharamshala</li>
+</ul>
+<p>Package Includes:</p>
+<ul>
+<li>A/C Travel</li>
+<li>2 Nights Stay</li>
+<li>Meals</li>
+<li>Sightseeing</li>
+<li>Guide</li>
+</ul>
+</div>
+
+<div class="images">
+<img src="shimla.jpeg">
+<img src="manali.jpeg" class="active">
+<img src="dharmashala.jpeg">
+</div>
+</div>
+
+<!-- RAJASTHAN -->
+<div class="package">
+<div>
+<h3>🏜️ RAJASTHAN PACKAGE TOUR</h3>
+<p>Fare:</p>
+<ul>
+<li>Adult: ₹11,999/-</li>
+<li>Child: ₹9,599/-</li>
+<li>Single: ₹14,900/-</li>
+</ul>
+<p>Places Covered:</p>
+<ul>
+<li>Jaipur</li>
+<li>Jodhpur</li>
+<li>Udaipur</li>
+</ul>
+<p>Package Includes:</p>
+<ul>
+<li>A/C Travel</li>
+<li>2 Nights Stay</li>
+<li>Meals</li>
+<li>Sightseeing</li>
+<li>Guide</li>
+</ul>
+</div>
+
+<div class="images">
+<img src="jaipur.jpeg">
+<img src="jodhpur.jpeg" class="active">
+<img src="udaipur.jpeg">
+</div>
+</div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
